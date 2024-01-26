@@ -1,0 +1,23 @@
+create database School
+
+-- Create the table
+CREATE TABLE Student
+(
+    ID INT NOT NULL IDENTITY(1,1),
+    Name VARCHAR(100) NOT NULL,
+    Address VARCHAR(100) NOT NULL,
+    Email VARCHAR(75) NOT NULL,
+    Class VARCHAR(5) NOT NULL,
+    PRIMARY KEY (ID)
+);
+
+-- Insert some sample data
+INSERT INTO Student (Name, Address, Email, Class)
+VALUES 
+    ('david', '1873 Main St', 'david.doe@email.com', 'D'),
+    ('Dywane Smith', '2456 Oak St', 'dywane.smith@email.com', 'E'),
+    ('david Johnson', '3789 Pine St', 'david.johnson@email.com', 'F');
+
+
+select * from Student;
+-- Close SSMS to save changes
